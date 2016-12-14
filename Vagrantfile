@@ -10,6 +10,6 @@ Vagrant.configure(API_VERSION) do |config|
 
         config.vm.box = "bento/centos-7.2"
         config.ssh.insert_key = false
-        config.vm.provision "docker"        
+        config.vm.provision "docker"
     end
 end

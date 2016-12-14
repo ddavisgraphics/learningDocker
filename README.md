@@ -20,3 +20,19 @@ These are the trials, tribulations, and experiments I go through in the process 
 - Use these containers as a working Hydra Stack
 - Try this with actual data
 - Modify from there  
+
+
+## HOST MACHINE
+
+Should be barebones, only docker and basic provisioning should be added.
+All of the provisioning should be done in individual containers through the use of dockerfiles and building with docker.  
+
+## First Docker Container
+
+- Use Docker Hub to locate a base docker image `https://hub.docker.com/_/centos/`
+  - `docker pull centos` to pull the latest centos box
+  - verify that the docker image is now on your machine by running `docker images`
+  - run the docker image by `docker run centos`
+
+- Use this to Create another docker image
+  - `docker build /vagrant/FirstDockerContainer`
